@@ -17,6 +17,7 @@ void readSensorData(void *pvParameters)
 
         xQueueOverwrite(QueueLCD, &data); 
         xQueueOverwrite(QueueLED, &data);
+        xQueueOverwrite(QueueMQTT, &data);
 
         Serial.printf("[Sensor] Temp: %.1f°C | Hum: %.1f%%\n", data.temperature, data.humidity);
     } else {

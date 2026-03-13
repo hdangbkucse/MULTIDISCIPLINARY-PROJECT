@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/queue.h>
+#include <freertos/semphr.h>
 
 struct EnvironmentData {
     float temperature;
@@ -12,4 +13,6 @@ struct EnvironmentData {
 
 extern QueueHandle_t QueueLCD;
 extern QueueHandle_t QueueLED;
+extern QueueHandle_t QueueMQTT;
+extern SemaphoreHandle_t SemaphoreWifi;
 #endif // GLOBAL_H
