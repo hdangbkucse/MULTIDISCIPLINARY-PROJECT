@@ -4,7 +4,7 @@
 #include <PubSubClient.h>
 
 const char *coreIOT_server = "app.coreiot.io";
-const char *coreIOT_token = "s1q8z3b1w3ipvmnizd3p";
+const char *coreIOT_token = COREIOT_TOKEN;
 const int mqttPort = 1883;
 
 WiFiClient espClient;

@@ -2,8 +2,8 @@
 #include "task_wifi.h"
 #include <WiFi.h>
 
-const char *wifi_ssid = "hdang";
-const char *wifi_password = "hdangbachkhoa";
+const char *wifi_ssid = WIFI_SSID;
+const char *wifi_password = WIFI_PASS;
 void taskWifi(void *pvParameters)
 {
     WiFi.mode(WIFI_STA);
